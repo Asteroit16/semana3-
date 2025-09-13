@@ -11,4 +11,4 @@ print(f"Servidor UDP escuchando en {UDP_IP}:{UDP_PORT}")
 while True:
     data, addr = server_socket.recvfrom(1024)  # Recibir datagrama
     print(f"Mensaje recibido de {addr}: {data.decode()}")
-    server_socket.sendto("Mensaje recibido".encode(), addr)
+    server_socket.sendto("Mensaje recibidoo".encode(), addr)
